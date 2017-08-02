@@ -167,6 +167,13 @@ footer {
 #corgi_black_tan .eye{
   fill:black;
 }
+
+#corgi_red .outer_nose,
+#corgi_fawn .outer_nose,
+#corgi_sable .outer_nose,
+#corgi_black_tan .outer_nose{
+  fill:white;
+}
 /*navigation*/
 .nav_icon{
   width:20px;
