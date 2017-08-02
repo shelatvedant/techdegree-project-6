@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('svgs/background.svg') #add8e6;
 }
 
 #container {
@@ -25,9 +25,10 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  transition: .7s ease-out;
   }
   a:hover {
-    color: #111;
+    color: #ba8058;
   }
 
 header {
@@ -39,13 +40,11 @@ header {
   }
   header nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
   }
-
-  header nav ul li a img {
-    height: 13px;
+  header nav ul li a svg {
+    margin-right: 6px;
   }
-
   header h1 {
     line-height: 1em;
   }
@@ -79,4 +78,115 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/* logo */
+
+#logo{
+  width:140px;
+  height: 120px;
+  transition:transform .5s ease-out;
+}
+#logo:hover{
+  transform:scale(1.3) rotate(360deg);
+}
+
+/* logo colors */
+.st0{fill:#BA8058;}
+.st1{fill:#EAAA7F;}
+.st2{fill:#F4C6A6;}
+
+/*logo text*/
+.logo_text{
+  opacity: 0;
+}
+
+.logo_text_replacement{
+  text-transform: uppercase;
+  color: #BA8058;
+  margin-bottom: 5px;
+}
+
+/* corgi*/
+.corgi{
+  width: 170px;
+  height: 170px;
+  transition: transform 1s ease-out;
+}
+.corgi:hover{
+  transform:scale(1.2) rotate(-8deg);
+}
+
+/* corgi body color */
+#corgi_red .inner_nose,
+#corgi_sable .inner_nose {
+  fill:lightblue;
+}
+
+#corgi_fawn .inner_nose,
+#corgi_black_tan .inner_nose {
+  fill:grey;
+}
+
+#corgi_red .ear,
+#corgi_sable .ear {
+  fill:orange;
+}
+
+#corgi_fawn .ear,
+#corgi_black_tan .ear {
+  fill:tomato;
+}
+
+#corgi_red .head {
+  fill: lightblue;
+}
+
+#corgi_fawn .head {
+  fill: yellow;
+}
+
+#corgi_sable .head {
+  fill: brown;
+}
+
+#corgi_black_tan .head {
+  fill: pink;
+}
+
+#corgi_red .eyebrow,
+#corgi_fawn .eyebrow,
+#corgi_sable .eyebrow,
+#corgi_black_tan .eyebrow{
+  fill:black;
+}
+
+#corgi_red .eye,
+#corgi_fawn .eye,
+#corgi_sable .eye,
+#corgi_black_tan .eye{
+  fill:black;
+}
+/*navigation*/
+.nav_icon{
+  width:20px;
+  height:20px;
+  fill:#39ADD1;
+  transition: all .7s ease-out;
+}
+a:hover .nav_icon {
+  fill:#ff6347;
+  transform: scale(1.3) rotate(-10deg);
+}
+
+
+/* media queries */
+
+@media (min-width:425px){
+  .logo_text{
+    opacity:1;
+  }
+  .logo_text_replacement{
+    display:none;
+  }
 }
