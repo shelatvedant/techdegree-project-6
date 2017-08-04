@@ -114,7 +114,7 @@ footer {
   transition: transform 1s ease-out;
 }
 .corgi:hover{
-  transform:scale(1.2) rotate(-8deg);
+  transform:scale(1.1) rotate(-8deg);
 }
 
 /* corgi body color */
